@@ -1,16 +1,25 @@
 if !SERVER then return end
 
-MySQLData = MySQLData || {}
-MySQLData.Config = MySQLData.Config || {}
+MySQLPData = MySQLPData || {}
+MySQLPData.Config = MySQLPData.Config || {}
 
--- Which database should be used? 
-MySQLData.Config.Database = {
-    db = "",
-    user = "",
-    password = "",
-    port = 3306,
-    ip = ""
+-- Which database should be used?
+MySQLPData.Config.Databases = {
+    ["sv1"] = {
+        db = "",
+        user = "",
+        password = "",
+        port = 3306,
+        ip = ""
+    },
+    ["sv2"] = {
+        db = "",
+        user = "",
+        password = "",
+        port = 3306,
+        ip = ""
+    }
 }
 
 -- Should debug prints be enabled? 
-MySQLData.Config.Debug = false
+MySQLPData.Config.Debug = false
